@@ -1,0 +1,129 @@
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e8f5e9;
+  font-family: Ga Maamli, sans-serif;
+}
+.gameBoard {
+  position: relative;
+}
+.Game {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+/** //script */
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.popUp {
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  visibility: hidden;
+}
+
+.message {
+  font-size: 40px;
+  position: absolute;
+  top: -130px;
+  left: -70px;
+  width: 300px;
+}
+.scoreX {
+  position: absolute;
+  font-size: 30px;
+  top: 220px;
+  left: -120px;
+}
+
+.scoreO {
+  position: absolute;
+  font-size: 30px;
+  top: 220px;
+  right: -70px;
+}
+.newGame {
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1b5e20;
+  border: 1px solid #ffff;
+  background-color: #ffff;
+  box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+.newGame:hover {
+  background-color: #81c784;
+  border: #81c784;
+}
+.newGame:active {
+  padding: 25px 35px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #a5d6a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #388e3c;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.cell:hover {
+  background-color: #81c784;
+}
+.cell.x {
+  color: #1b5e20;
+}
+.cell.o {
+  color: #4caf50;
+}
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+.resetbtn {
+  padding: 15px 25px;
+  margin-top: 30px;
+  background-color: #d2e7d3;
+  color: #050505;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.18s;
+}
+.resetbtn:hover {
+  background-color: #78c57c;
+  color: #ffff;
+}
+.resetbtn:active {
+  opacity: 0.8;
+}
